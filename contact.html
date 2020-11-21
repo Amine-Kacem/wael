@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WAEL AUTOMOBILES | CONTACT US</title>
+    <meta name="description" content="This is the description" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="font-awesome/css/font-awesome.min.css"
+    />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul style="width: 1540px">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">WAEL AUTOMOBILES</h1>
+    </header>
+
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="well well-sm">
+              <form class="form-horizontal" method="post">
+                <fieldset>
+                  <legend class="text-center header">Contact us</legend>
+                  <div class="form-group">
+                    <div class="col-md-10 col-md-offset-1">
+                      <input
+                        id="fname"
+                        name="name"
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-10 col-md-offset-1">
+                      <input
+                        id="lname"
+                        name="name"
+                        type="text"
+                        placeholder="Last Name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-10 col-md-offset-1">
+                      <input
+                        id="email"
+                        name="email"
+                        type="text"
+                        placeholder="Email Address"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-10 col-md-offset-1">
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="text"
+                        placeholder="Phone"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-10 col-md-offset-1">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Enter your massage for us here."
+                        rows="7"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <div class="panel panel-default">
+                <div class="text-center header">Our Office</div>
+                <div class="panel-body text-center">
+                  <h4>Address</h4>
+                  <div>
+                    2217 Washington Blvd<br />
+                    Washington DC<br />
+                    #(703) 1234 1234<br />
+                    service@company.com<br />
+                  </div>
+                  <hr />
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102239.58355563131!2d10.073237404753558!3d36.79486241711063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis!5e0!3m2!1sfr!2stn!4v1605971892541!5m2!1sfr!2stn"
+                      width="600"
+                      height="450"
+                      frameborder="0"
+                      style="border: 0"
+                      allowfullscreen=""
+                      aria-hidden="false"
+                      tabindex="0"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+      <script type="text/javascript">
+        jQuery(function ($) {
+          function init_map1() {
+            var myLocation = new google.maps.LatLng(
+              38.885516,
+              -77.09327200000001
+            );
+            var mapOptions = {
+              center: myLocation,
+              zoom: 16,
+            };
+            var marker = new google.maps.Marker({
+              position: myLocation,
+              title: "Property Location",
+            });
+            var map = new google.maps.Map(
+              document.getElementById("map1"),
+              mapOptions
+            );
+            marker.setMap(map);
+          }
+          init_map1();
+        });
+      </script>
+
+      <style>
+        .map {
+          min-width: 300px;
+          min-height: 300px;
+          width: 100%;
+          height: 100%;
+        }
+
+        .header {
+          background-color: #f5f5f5;
+          color: #36a0ff;
+          height: 70px;
+          font-size: 27px;
+          padding: 10px;
+        }
+      </style>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">WAEL AUTOMOBILES</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="Images/instagram.jpg" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="Images/linkedin.jpg" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="Images/Facebook Logo.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
